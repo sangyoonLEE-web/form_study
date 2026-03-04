@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>select tag</title>
+  </head>
+  <!-- 내부스타일, css -->
+  <style>
+    /* select { 
+        display: block;
+    } */
+     div{
+background-color: aqua;
+border: 1px solid red;
+
+     }
+  </style>
+
+  <body>
+    <!-- div로 구간주어 자동 블락치기 -->
+    <!-- 선택 태그 -->
+    <div>
+      <select>
+        <option value="apple">사과</option>
+        <option value="banana">바나나</option>
+        <option value="grape" selected>포도</option>
+        <option value="mango">망고</option>
+      </select>
+    </div>
+
+    <div>
+      <!-- 여러개 선택하기(multiple) -->
+      <select multiple>
+        <option value="">축구</option>
+        <option value="">야구</option>
+        <option value="">농구</option>
+        <option value="">수영</option>
+        <option value="">스키</option>
+      </select>
+    </div>
+
+    <div>
+      <!-- 선택 못하게 만들기 -->
+      <select size="3">
+        <option value="">김밥</option>
+        <option value="">라면</option>
+        <option value="" disabled>삼겹살(품절)</option>
+        <option value="">햄버거</option>
+        <option value="">피자</option>
+      </select>
+    </div>
+
+    <div>
+      <!-- 옵션들을 그룹으로 만들기 -->
+      <select>
+        <optgroup label="서울시">
+          <option value="">강북구</option>
+          <option value="">강남구</option>
+          <option value="">서초구</option>
+        </optgroup>
+        <!-- 경기도 (중원구 분당구) -->
+        <optgroup label="경기도">
+          <option value="">중원구</option>
+          <option value="">분당구</option>
+          <option value="">강남</option>
+        </optgroup>
+        <!-- 대구 -->
+
+        <optgroup label="달서구">
+          <option value="">달서구</option>
+          <option value="">중구</option>
+          <option value="">수성구</option>
+        </optgroup>
+      </select>
+    </div>
+  </body>
+</html>
